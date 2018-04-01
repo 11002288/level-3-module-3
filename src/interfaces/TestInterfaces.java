@@ -8,9 +8,9 @@ public class TestInterfaces {
 
 	@Test
 	public void testBackwardsString() {
-		SpecialString bs = new BackwardsString("This is a test");
+		SpecialString bs = new BackwardsString("this is a test");
 		System.out.println(bs);
-		assertEquals("tset a si sihT", bs.toString());
+		assertEquals("tset a si siht", bs.funkifyText());
 	}
 	
 	@Test

@@ -10,8 +10,18 @@ public class MixedCapsString extends SpecialString {
 	@Override
 	public String funkifyText() {
 		// TODO Auto-generated method stub
-		
-		return s;
+		String in = "";
+		System.out.println(s);
+		for (int i = 0; i < s.length(); i++) {
+			
+		if (i%2==0) {
+			in = in+s.substring(i, i+1).toLowerCase();
+			}else {
+			in = in+s.substring(i, i+1).toUpperCase();
+			}
+
+		}
+		return in;
 	}
 
 }
